@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "MATH.H": "cpp",
+        "cjson.h": "c",
+        "sysinfo.h": "c",
+        "stdbool.h": "c",
+        "cctype": "c",
+        "userconf.h": "c",
+        "pbdaerrors.h": "c"
+    }
+}

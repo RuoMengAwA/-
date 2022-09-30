@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="驾驶报告"
+    app:titleMarginStart="160dp"
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/drivemsg"
+            android:layout_width="374dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="3dp"
+            android:gravity="left"
+            android:text="驾驶人：xxx\n反馈时间：2022-01-16 14:22:30"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/Grey300" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血糖"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bls"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bls" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒精"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ac"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ac" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SDNN"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sdnn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sdnn" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心率"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hea"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/hea" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血压"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/blp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/blp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体温"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tem"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/tem" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="80dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="30dp"
+            android:text="健康状况"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginLeft="12dp"
+            android:text="危险"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginLeft="12dp"
+            android:text="异常"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginStart="12dp"
+            android:text="正常"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="mmHg"
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/blp"
+            app:layout_constraintStart_toEndOf="@+id/blp"
+            app:layout_constraintTop_toTopOf="@+id/blp"
+            app:layout_constraintVertical_bias="0.576" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="mmol/L"
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bls"
+            app:layout_constraintStart_toEndOf="@+id/bls"
+            app:layout_constraintTop_toTopOf="@+id/bls" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="30dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="16dp"
+            android:text="℃"
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tem"
+            app:layout_constraintStart_toEndOf="@+id/tem"
+            app:layout_constraintTop_toTopOf="@+id/tem" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="bpm"
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hea"
+            app:layout_constraintStart_toEndOf="@+id/hea"
+            app:layout_constraintTop_toTopOf="@+id/hea" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginStart="16dp"
+            android:text="ms"
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sdnn"
+            app:layout_constraintStart_toEndOf="@+id/sdnn"
+            app:layout_constraintTop_toTopOf="@+id/sdnn" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="mg/100mL"
+            android:textColor="#707070"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ac"
+            app:layout_constraintStart_toEndOf="@+id/ac"
+            app:layout_constraintTop_toTopOf="@+id/ac" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textView12"
+            android:layout_width="24dp"
+            android:layout_height="9dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="44dp"
+            app:cardBackgroundColor="#260a50"
+            app:cardCornerRadius="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textView14"
+            android:layout_width="24dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="48dp"
+            app:cardBackgroundColor="#FF2A2A"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8"></androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textView13"
+            android:layout_width="24dp"
+            android:layout_height="10dp"
+            app:cardBackgroundColor="#ffc916"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView11"></androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="188dp"
+            android:layout_height="166dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.994"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578"
+            app:layout_goneMarginRight="5dp"
+            app:srcCompat="@drawable/healthy" />
+
+        <ImageView
+            android:id="@+id/nothealth"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.514"
+            app:srcCompat="@drawable/sport" />
+
+        <TextView
+            android:id="@+id/blp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:text="170"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/bls"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:text="Text"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/blp" />
+
+        <TextView
+            android:id="@+id/tem"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:text="Text"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/bls" />
+
+        <TextView
+            android:id="@+id/hea"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:text="Text"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/tem" />
+
+        <TextView
+            android:id="@+id/ac"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:text="Text"
+            android:textColor="#FF2A2A"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/hea" />
+
+        <TextView
+            android:id="@+id/ac2"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="临床医学常使用SDNN作为关键指标计算\n心率变异性（HRV），SDNN数值越大，\n心脏发病几率相对更低。"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            app:layout_constraintVertical_bias="0.638" />
+
+        <TextView
+            android:id="@+id/sdnn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="113"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView30"
+            app:layout_constraintTop_toBottomOf="@+id/ac" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="7dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="4dp"
+            app:cardBackgroundColor="#508bed"
+            app:cardCornerRadius="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintEnd_toStartOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15"
+            app:layout_constraintVertical_bias="0.0"></androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/Grey300" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/beat"
+            android:layout_width="7dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#508bed"
+            app:cardCornerRadius="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="64dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="10dp"
+            android:gravity="left"
+            android:text="违规行为"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/beat"
+            app:layout_constraintStart_toEndOf="@+id/beat"
+            app:layout_constraintTop_toTopOf="@+id/beat" />
+
+        <TextView
+            android:id="@+id/illegal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="12321321312"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/illimage"
+            app:layout_constraintTop_toTopOf="@+id/illimage" />
+
+        <ImageView
+            android:id="@+id/illimage"
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/beat"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

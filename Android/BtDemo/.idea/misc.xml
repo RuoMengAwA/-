@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/bottom_navigation_drive.xml" value="0.1" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/bottom_navigation_drivefile.xml" value="0.356" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/bottom_navigation_my.xml" value="0.3555" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.1" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/drivefile_c.xml" value="0.356" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/my.xml" value="0.1335" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/profile.xml" value="0.212" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/sport.xml" value="0.2905" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/drawable/warning.xml" value="0.356" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/activity_contacts.xml" value="0.25" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/activity_main1.xml" value="0.6" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/activity_reportdetail.xml" value="0.335" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/dialog_animation_load.xml" value="0.40217391304347827" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/drive_report.xml" value="0.30045871559633025" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/drivefilercy_item.xml" value="0.31690140845070425" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/fragment_drivereport.xml" value="0.25" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/fragment_homepage.xml" value="0.25" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/fragment_my.xml" value="0.25" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/loading_layout.xml" value="0.4036458333333333" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/neterror.xml" value="0.4041666666666667" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/nodata.xml" value="0.254981884057971" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/layout/profile.xml" value="0.4036458333333333" />
+        <entry key="..\:/AppDemo/BtDemo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.4036458333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

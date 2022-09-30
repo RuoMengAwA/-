@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <View
+        android:id="@+id/mv_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="601dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/mv_view" />
+
+    <TextView
+        android:id="@+id/loadname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:gravity="left"
+        android:text="未登录"
+        android:textColor="#333333"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintStart_toEndOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="@+id/profile" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/carbinding"
+        app:layout_constraintStart_toStartOf="@+id/carbinding" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/carbinding"
+        android:layout_width="360dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="110dp"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
+        android:text="    车辆绑定  (未绑定)"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        app:backgroundTint="#f4f4f4"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mv_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/contacts"
+        android:layout_width="360dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="10dp"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
+        android:text="    紧急联系人"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        app:backgroundTint="#f4f4f4"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/carbinding"
+        app:layout_constraintStart_toStartOf="@+id/carbinding"
+        app:layout_constraintTop_toBottomOf="@+id/carbinding" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/quit"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#508bed"
+        android:text="退出登录"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="left"
+        android:text="设置"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="@+id/contacts" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0.6dp"
+        android:layout_marginBottom="22dp"
+        android:background="#D8D7D7"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="left"
+        android:text="关于"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="@+id/textView26" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0.6dp"
+        android:layout_marginBottom="22dp"
+        android:background="#D8D7D7"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="left"
+        android:text="使用帮助"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintStart_toStartOf="@+id/textView27" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="0.6dp"
+        android:layout_marginBottom="50dp"
+        android:background="#D8D7D7"
+        app:layout_constraintBottom_toTopOf="@+id/quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

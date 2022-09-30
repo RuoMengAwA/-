@@ -1,0 +1,370 @@
+;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Tue Mar 12 12:04:51 2019
+;VERSION 0.2
+;FILE adc.o
+;FILE app.o
+active_conhdl_to_conidx <= USED 0
+active_conidx_to_conhdl <= USED 0
+app_easy_gap_advertise_with_timeout_stop <= USED 0
+app_easy_gap_dev_config_get_active <= USED 0
+app_easy_gap_directed_advertise_get_active <= USED 0
+app_easy_gap_directed_advertise_start <= USED 0
+app_easy_gap_non_connectable_advertise_get_active <= USED 0
+app_easy_gap_non_connectable_advertise_start <= USED 0
+app_easy_gap_param_update_get_active <= USED 0
+app_easy_gap_start_connection_to <= USED 0
+app_easy_gap_start_connection_to_get_active <= USED 0
+app_easy_gap_start_connection_to_set <= USED 0
+app_easy_gap_undirected_advertise_with_timeout_start <= USED 0
+app_set_prf_srv_perm <= USED 0
+app_timer_set <= USED 0
+;FILE app_customs.o
+app_custs1_init <= USED 0
+;FILE app_customs_common.o
+app_custs1_val_wr_validate <= USED 0
+;FILE app_customs_task.o
+;FILE app_default_handlers.o
+default_advertise_operation <= USED 0
+default_app_on_csrk_exch <= USED 0
+default_app_on_disconnect <= USED 0
+default_app_on_encrypt_req_ind <= USED 0
+default_app_on_ltk_exch <= USED 0
+default_app_on_pairing_request <= USED 0
+default_app_on_tk_exch_nomitm <= USED 0
+;FILE app_diss.o
+;FILE app_diss_task.o
+;FILE app_easy_msg_utils.o
+app_easy_msg_free_callback <= USED 0
+app_easy_msg_modify <= USED 0
+app_easy_msg_set <= USED 0
+app_easy_wakeup <= USED 0
+app_easy_wakeup_free <= USED 0
+app_easy_wakeup_set <= USED 0
+app_msg_utils_api_process_handler <= USED 0
+;FILE app_easy_security.o
+app_easy_security_csrk_exch <= USED 0
+app_easy_security_csrk_get_active <= USED 0
+app_easy_security_encrypt_cfm <= USED 0
+app_easy_security_encrypt_cfm_get_active <= USED 0
+app_easy_security_ltk_exch <= USED 0
+app_easy_security_ltk_exch_get_active <= USED 0
+app_easy_security_pairing_rsp_get_active <= USED 0
+app_easy_security_request <= USED 0
+app_easy_security_request_get_active <= USED 0
+app_easy_security_send_pairing_rsp <= USED 0
+app_easy_security_set_encrypt_req_invalid <= USED 0
+app_easy_security_set_encrypt_req_valid <= USED 0
+app_easy_security_set_ltk_exch <= USED 0
+app_easy_security_set_ltk_exch_from_sec_env <= USED 0
+app_easy_security_tk_exch <= USED 0
+app_easy_security_tk_get_active <= USED 0
+app_easy_security_validate_encrypt_req_against_env <= USED 0
+;FILE app_easy_timer.o
+app_easy_timer_cancel_all <= USED 0
+app_easy_timer_modify <= USED 0
+;FILE app_entry_point.o
+;FILE app_msg_utils.o
+app_msg_send_wakeup_ble <= USED 0
+;FILE app_security.o
+app_sec_gen_csrk <= USED 0
+app_sec_gen_ltk <= USED 0
+app_sec_gen_tk <= USED 0
+;FILE app_spotar.o
+app_spotar_exec_patch <= USED 0
+;FILE app_spotar_task.o
+;FILE app_task.o
+;FILE arch_main.o
+;FILE arch_patch.o
+;FILE arch_sleep.o
+arch_ble_ext_wakeup_off <= USED 0
+arch_ble_ext_wakeup_on <= USED 0
+arch_force_active_mode <= USED 0
+arch_get_sleep_mode <= USED 0
+arch_last_rwble_evt_get <= USED 0
+arch_restore_sleep_mode <= USED 0
+;FILE arch_system.o
+arch_adv_time_calculate <= USED 0
+arch_set_pxact_gpio <= USED 0
+arch_uart_init_slow <= USED 0
+arch_wkupct_tweak_deb_time <= USED 0
+calibrate_rcx20 <= USED 0
+lld_sleep_lpcycles_2_us_rcx_func <= USED 0
+lld_sleep_us_2_lpcycles_rcx_func <= USED 0
+read_rcx_freq <= USED 0
+set_xtal16m_trim_value <= USED 0
+;FILE attm_db_128.o
+attm_svc_create_db_128 <= USED 0
+;FILE atts_task.obj
+;FILE atts_util.obj
+dg_register_task_for_read_request <= USED 0
+dg_unregister_task_from_read_request <= USED 0
+;FILE battery.o
+batt_cal_aaa <= USED 0
+batt_cal_cr1225 <= USED 0
+;FILE boot_vectors.o
+;FILE ch_map.obj
+;FILE custom_common.o
+check_client_char_cfg <= USED 0
+get_value_handle <= USED 0
+;FILE custs1.o
+;FILE diss.o
+;FILE fk_oled.o
+draw_picture <= USED 0
+show_number4896 <= USED 0
+;FILE gapc_task.obj
+;FILE gapm_util.obj
+;FILE gpio.o
+GPIO_ConfigurePinPower <= USED 0
+GPIO_GetIRQInputLevel <= USED 0
+GPIO_SetIRQInputLevel <= USED 0
+;FILE hardfault_handler.o
+;FILE i2c_eeprom.o
+;FILE jump_table.o
+dummyf <= USED 0
+;FILE ke_mem.obj
+log_ke_free <= USED 0
+log_ke_malloc <= USED 0
+;FILE ke_task.obj
+;FILE lis2ds12_acc_driver.o
+LIS2DS12_ACC_Get_Acceleration <= USED 0
+LIS2DS12_ACC_Get_ExternalSensor <= USED 0
+LIS2DS12_ACC_Get_Raw_Acceleration <= USED 0
+LIS2DS12_ACC_R_4D_EN <= USED 0
+LIS2DS12_ACC_R_6D_IA <= USED 0
+LIS2DS12_ACC_R_6D_IA_DUP <= USED 0
+LIS2DS12_ACC_R_6D_IA_DUP2 <= USED 0
+LIS2DS12_ACC_R_6D_THS <= USED 0
+LIS2DS12_ACC_R_BDU <= USED 0
+LIS2DS12_ACC_R_BOOT <= USED 0
+LIS2DS12_ACC_R_CK_GATE_FUNC <= USED 0
+LIS2DS12_ACC_R_DOUBLE_TAP <= USED 0
+LIS2DS12_ACC_R_DOUBLE_TAP_DUP <= USED 0
+LIS2DS12_ACC_R_DOUBLE_TAP_DUP2 <= USED 0
+LIS2DS12_ACC_R_DRDY <= USED 0
+LIS2DS12_ACC_R_DRDY_DUP <= USED 0
+LIS2DS12_ACC_R_DRDY_PULSED <= USED 0
+LIS2DS12_ACC_R_FDS_SLOPE <= USED 0
+LIS2DS12_ACC_R_FF_DUR <= USED 0
+LIS2DS12_ACC_R_FF_IA <= USED 0
+LIS2DS12_ACC_R_FF_IA_DUP <= USED 0
+LIS2DS12_ACC_R_FF_IA_DUP2 <= USED 0
+LIS2DS12_ACC_R_FIFO_OVR <= USED 0
+LIS2DS12_ACC_R_FIFO_THS <= USED 0
+LIS2DS12_ACC_R_FMODE <= USED 0
+LIS2DS12_ACC_R_FS_SRC <= USED 0
+LIS2DS12_ACC_R_FTH <= USED 0
+LIS2DS12_ACC_R_FifoThsld <= USED 0
+LIS2DS12_ACC_R_FreeFallDuration <= USED 0
+LIS2DS12_ACC_R_FullScale <= USED 0
+LIS2DS12_ACC_R_HF_ODR <= USED 0
+LIS2DS12_ACC_R_H_LACTIVE <= USED 0
+LIS2DS12_ACC_R_I2C_DISABLE <= USED 0
+LIS2DS12_ACC_R_IF_ADD_INC <= USED 0
+LIS2DS12_ACC_R_INT1_6D <= USED 0
+LIS2DS12_ACC_R_INT1_DRDY <= USED 0
+LIS2DS12_ACC_R_INT1_FF <= USED 0
+LIS2DS12_ACC_R_INT1_FIFO_FULL <= USED 0
+LIS2DS12_ACC_R_INT1_FTH <= USED 0
+LIS2DS12_ACC_R_INT1_MASTER_DRDY <= USED 0
+LIS2DS12_ACC_R_INT1_S_TAP <= USED 0
+LIS2DS12_ACC_R_INT1_TAP <= USED 0
+LIS2DS12_ACC_R_INT1_WU <= USED 0
+LIS2DS12_ACC_R_INT2_BOOT <= USED 0
+LIS2DS12_ACC_R_INT2_DRDY <= USED 0
+LIS2DS12_ACC_R_INT2_FTH <= USED 0
+LIS2DS12_ACC_R_INT2_ON_INT1 <= USED 0
+LIS2DS12_ACC_R_INT2_SIG_MOT <= USED 0
+LIS2DS12_ACC_R_INT2_STEP_DET <= USED 0
+LIS2DS12_ACC_R_INT2_TILT <= USED 0
+LIS2DS12_ACC_R_LAT <= USED 0
+LIS2DS12_ACC_R_LIR <= USED 0
+LIS2DS12_ACC_R_MASTER_ON <= USED 0
+LIS2DS12_ACC_R_MODULE8_BIT <= USED 0
+LIS2DS12_ACC_R_MODULE_ON <= USED 0
+LIS2DS12_ACC_R_MODULE_READY <= USED 0
+LIS2DS12_ACC_R_MODULE_TO_FIFO <= USED 0
+LIS2DS12_ACC_R_ODR <= USED 0
+LIS2DS12_ACC_R_OVR_DUP <= USED 0
+LIS2DS12_ACC_R_PEDO4G <= USED 0
+LIS2DS12_ACC_R_PP_OD <= USED 0
+LIS2DS12_ACC_R_PullUP_Disc <= USED 0
+LIS2DS12_ACC_R_QUIET <= USED 0
+LIS2DS12_ACC_R_RST_NSTEP <= USED 0
+LIS2DS12_ACC_R_RST_PEDO <= USED 0
+LIS2DS12_ACC_R_RST_SIGN_MOT <= USED 0
+LIS2DS12_ACC_R_RST_TILT <= USED 0
+LIS2DS12_ACC_R_SC_MTHS <= USED 0
+LIS2DS12_ACC_R_SENS_HUB_END_OP <= USED 0
+LIS2DS12_ACC_R_SHOCK <= USED 0
+LIS2DS12_ACC_R_SIGN_MOT_ON <= USED 0
+LIS2DS12_ACC_R_SIG_MOT_DETECT <= USED 0
+LIS2DS12_ACC_R_SIM <= USED 0
+LIS2DS12_ACC_R_SINGLE_DOUBLE_TAP <= USED 0
+LIS2DS12_ACC_R_SINGLE_TAP <= USED 0
+LIS2DS12_ACC_R_SINGLE_TAP_DUP <= USED 0
+LIS2DS12_ACC_R_SINGLE_TAP_DUP2 <= USED 0
+LIS2DS12_ACC_R_SLEEP_ON <= USED 0
+LIS2DS12_ACC_R_SLEEP_STATE <= USED 0
+LIS2DS12_ACC_R_SLEEP_STATE_DUP <= USED 0
+LIS2DS12_ACC_R_SLEEP_STATE_IA <= USED 0
+LIS2DS12_ACC_R_SOFT_RESET <= USED 0
+LIS2DS12_ACC_R_ST <= USED 0
+LIS2DS12_ACC_R_STEP_CNT_ON <= USED 0
+LIS2DS12_ACC_R_SamplesNum <= USED 0
+LIS2DS12_ACC_R_SleepDuration <= USED 0
+LIS2DS12_ACC_R_TAP_IA <= USED 0
+LIS2DS12_ACC_R_TAP_SIGN <= USED 0
+LIS2DS12_ACC_R_TAP_THS <= USED 0
+LIS2DS12_ACC_R_TAP_X_EN <= USED 0
+LIS2DS12_ACC_R_TAP_Y_EN <= USED 0
+LIS2DS12_ACC_R_TAP_Z_EN <= USED 0
+LIS2DS12_ACC_R_TILT_INT <= USED 0
+LIS2DS12_ACC_R_TILT_ON <= USED 0
+LIS2DS12_ACC_R_TUD_EN <= USED 0
+LIS2DS12_ACC_R_Temperature <= USED 0
+LIS2DS12_ACC_R_WU_IA <= USED 0
+LIS2DS12_ACC_R_WU_IA_DUP <= USED 0
+LIS2DS12_ACC_R_WU_IA_DUP2 <= USED 0
+LIS2DS12_ACC_R_WU_THS <= USED 0
+LIS2DS12_ACC_R_WakeUpDuration <= USED 0
+LIS2DS12_ACC_R_XH <= USED 0
+LIS2DS12_ACC_R_XL <= USED 0
+LIS2DS12_ACC_R_X_TAP <= USED 0
+LIS2DS12_ACC_R_X_WU <= USED 0
+LIS2DS12_ACC_R_YH <= USED 0
+LIS2DS12_ACC_R_YL <= USED 0
+LIS2DS12_ACC_R_Y_TAP <= USED 0
+LIS2DS12_ACC_R_Y_WU <= USED 0
+LIS2DS12_ACC_R_ZH <= USED 0
+LIS2DS12_ACC_R_ZL <= USED 0
+LIS2DS12_ACC_R_Z_TAP <= USED 0
+LIS2DS12_ACC_R_Z_WU <= USED 0
+LIS2DS12_ACC_SwapHighLowByte <= USED 0
+LIS2DS12_ACC_W_4D_EN <= USED 0
+LIS2DS12_ACC_W_6D_THS <= USED 0
+LIS2DS12_ACC_W_BDU <= USED 0
+LIS2DS12_ACC_W_BOOT <= USED 0
+LIS2DS12_ACC_W_DRDY_PULSED <= USED 0
+LIS2DS12_ACC_W_FDS_SLOPE <= USED 0
+LIS2DS12_ACC_W_FF_DUR <= USED 0
+LIS2DS12_ACC_W_FMODE <= USED 0
+LIS2DS12_ACC_W_FifoThsld <= USED 0
+LIS2DS12_ACC_W_FreeFallDuration <= USED 0
+LIS2DS12_ACC_W_FullScale <= USED 0
+LIS2DS12_ACC_W_HF_ODR <= USED 0
+LIS2DS12_ACC_W_H_LACTIVE <= USED 0
+LIS2DS12_ACC_W_I2C_DISABLE <= USED 0
+LIS2DS12_ACC_W_IF_ADD_INC <= USED 0
+LIS2DS12_ACC_W_INT1_6D <= USED 0
+LIS2DS12_ACC_W_INT1_DRDY <= USED 0
+LIS2DS12_ACC_W_INT1_FF <= USED 0
+LIS2DS12_ACC_W_INT1_FIFO_FULL <= USED 0
+LIS2DS12_ACC_W_INT1_FTH <= USED 0
+LIS2DS12_ACC_W_INT1_MASTER_DRDY <= USED 0
+LIS2DS12_ACC_W_INT1_S_TAP <= USED 0
+LIS2DS12_ACC_W_INT1_TAP <= USED 0
+LIS2DS12_ACC_W_INT1_WU <= USED 0
+LIS2DS12_ACC_W_INT2_BOOT <= USED 0
+LIS2DS12_ACC_W_INT2_DRDY <= USED 0
+LIS2DS12_ACC_W_INT2_FTH <= USED 0
+LIS2DS12_ACC_W_INT2_ON_INT1 <= USED 0
+LIS2DS12_ACC_W_INT2_SIG_MOT <= USED 0
+LIS2DS12_ACC_W_INT2_TILT <= USED 0
+LIS2DS12_ACC_W_LAT <= USED 0
+LIS2DS12_ACC_W_MASTER_ON <= USED 0
+LIS2DS12_ACC_W_MODULE_ON <= USED 0
+LIS2DS12_ACC_W_MODULE_TO_FIFO <= USED 0
+LIS2DS12_ACC_W_PEDO4G <= USED 0
+LIS2DS12_ACC_W_PP_OD <= USED 0
+LIS2DS12_ACC_W_PullUP_Disc <= USED 0
+LIS2DS12_ACC_W_QUIET <= USED 0
+LIS2DS12_ACC_W_SC_MTHS <= USED 0
+LIS2DS12_ACC_W_SHOCK <= USED 0
+LIS2DS12_ACC_W_SIGN_MOT_ON <= USED 0
+LIS2DS12_ACC_W_SIM <= USED 0
+LIS2DS12_ACC_W_SINGLE_DOUBLE_TAP <= USED 0
+LIS2DS12_ACC_W_SLEEP_ON <= USED 0
+LIS2DS12_ACC_W_ST <= USED 0
+LIS2DS12_ACC_W_SleepDuration <= USED 0
+LIS2DS12_ACC_W_TAP_THS <= USED 0
+LIS2DS12_ACC_W_TAP_X_EN <= USED 0
+LIS2DS12_ACC_W_TAP_Y_EN <= USED 0
+LIS2DS12_ACC_W_TAP_Z_EN <= USED 0
+LIS2DS12_ACC_W_TILT_ON <= USED 0
+LIS2DS12_ACC_W_TUD_EN <= USED 0
+LIS2DS12_ACC_W_WU_THS <= USED 0
+LIS2DS12_ACC_W_WakeUpDuration <= USED 0
+;FILE llc.obj
+;FILE llc_con_update_ind.obj
+;FILE my_adc.o
+;FILE my_int.o
+;FILE my_timer.o
+;FILE nmi_handler.o
+;FILE nvds.o
+;FILE prf_utils.o
+prf_pack_date_time <= USED 0
+prf_unpack_date_time <= USED 0
+;FILE pwm.o
+timer0_disable_irq <= USED 0
+timer0_release <= USED 0
+timer0_set <= USED 0
+timer2_enable <= USED 0
+timer2_init <= USED 0
+timer2_set_hw_pause <= USED 0
+timer2_set_pwm2_duty_cycle <= USED 0
+timer2_set_pwm3_duty_cycle <= USED 0
+timer2_set_pwm4_duty_cycle <= USED 0
+timer2_set_pwm_frequency <= USED 0
+timer2_set_sw_pause <= USED 0
+timer2_stop <= USED 0
+;FILE rf_580.o
+rf_nfm_disable <= USED 0
+rf_nfm_enable <= USED 0
+;FILE rwble.o
+;FILE rwip.o
+__ARM_common_ll_muluu <= USED 0
+;FILE smpc.obj
+;FILE smpc_task.obj
+;FILE spi.o
+lcd_dc_high <= USED 0
+lcd_dc_low <= USED 0
+spi_disable <= USED 0
+;FILE spi_flash.o
+spi_flash_auto_detect <= USED 0
+spi_flash_chip_erase <= USED 0
+spi_flash_chip_erase_forced <= USED 0
+spi_flash_configure_memory_protection <= USED 0
+spi_flash_enable <= USED 0
+spi_flash_fill <= USED 0
+spi_flash_page_fill <= USED 0
+spi_flash_power_down <= USED 0
+spi_flash_release_from_power_down <= USED 0
+spi_flash_set_write_disable <= USED 0
+spi_flash_write_enable_volatile <= USED 0
+spi_flash_write_status_reg <= USED 0
+spi_read_flash_jedec_id <= USED 0
+spi_read_flash_unique_id <= USED 0
+;FILE spotar.o
+spotar_patched_data_rcved <= USED 0
+;FILE syscntl.o
+syscntl_set_dcdc_vbat3v_level <= USED 0
+;FILE system_armcm0.o
+;FILE trng.o
+;FILE uart2.o
+uart2_flow_off <= USED 0
+uart2_flow_on <= USED 0
+uart2_read <= USED 0
+;FILE user_periph_setup.o
+;FILE user_profile.o
+;FILE wkupct_quadec.o
+quad_decoder_disable_irq <= USED 0
+quad_decoder_enable_irq <= USED 0
+quad_decoder_get_x_counter <= USED 0
+quad_decoder_get_y_counter <= USED 0
+quad_decoder_get_z_counter <= USED 0
+quad_decoder_init <= USED 0
+quad_decoder_register_callback <= USED 0
+quad_decoder_release <= USED 0
+wkupct_disable_irq <= USED 0
+wkupct_enable_irq <= USED 0
+wkupct_quad_disable_IRQ <= USED 0
+wkupct_register_callback <= USED 0

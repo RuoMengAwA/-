@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/mv_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/login2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="208dp"
+            android:background="#00000000"
+            app:layout_constraintEnd_toStartOf="@+id/drivedetail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/drivedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginEnd="22dp"
+            android:gravity="left"
+            android:text="contact"
+            android:textColor="#508BED"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/login2"
+            app:layout_constraintTop_toTopOf="@+id/profile" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:gravity="left"
+            android:text="未登录"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile"
+            app:layout_constraintStart_toEndOf="@+id/profile"
+            app:layout_constraintTop_toTopOf="@+id/profile" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="16dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:background="@drawable/corner_10dp_liner"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/me_integral_rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jiujiadata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="50dp"
+                android:layout_height="17dp"
+                android:gravity="center"
+                android:text="酒驾"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/me_collect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/boringdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/pilao"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:gravity="center"
+                android:text="疲劳驾驶"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/me_article"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dangertimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/dangertime"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:gravity="center"
+                android:text="危险行为"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="170dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="7dp"
+            app:cardBackgroundColor="#f4f4f4"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corner_10dp_data">
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="体温"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tempdata"
+                    app:layout_constraintStart_toStartOf="@+id/tempdata" />
+
+                <TextView
+                    android:id="@+id/tempdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#260a50"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.102"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="14dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="5dp"
+                    android:text="℃"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tempdata"
+                    app:layout_constraintStart_toEndOf="@+id/tempdata"
+                    app:layout_constraintTop_toTopOf="@+id/tempdata" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="6dp"
+                    android:text="暂无体温数据"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/tempdata"
+                    app:layout_constraintTop_toBottomOf="@+id/tempdata" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="178dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            app:cardBackgroundColor="#f4f4f4"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corner_10dp_data">
+
+                <TextView
+                    android:id="@+id/bloodf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="血脂"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/blfat"
+                    app:layout_constraintStart_toStartOf="@+id/blfat" />
+
+                <TextView
+                    android:id="@+id/blfat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#260a50"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.099"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="5dp"
+                    android:text="mg/dL"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/blfat"
+                    app:layout_constraintStart_toEndOf="@+id/blfat"
+                    app:layout_constraintTop_toTopOf="@+id/blfat" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="暂无血脂数据"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/blfat"
+                    app:layout_constraintTop_toBottomOf="@+id/blfat" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="170dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#f4f4f4"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corner_10dp_data">
+
+                <TextView
+                    android:id="@+id/heartbeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="心率"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/beat"
+                    app:layout_constraintStart_toStartOf="@+id/beat" />
+
+                <TextView
+                    android:id="@+id/beat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#260a50"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.105"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.507" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="5dp"
+                    android:text="bpm"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/beat"
+                    app:layout_constraintStart_toEndOf="@+id/beat"
+                    app:layout_constraintTop_toTopOf="@+id/beat" />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="6dp"
+                    android:text="暂无心跳数据"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/beat"
+                    app:layout_constraintTop_toBottomOf="@+id/beat" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="178dp"
+            android:layout_height="92dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="7dp"
+            app:cardBackgroundColor="#f4f4f4"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corner_10dp_data">
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="血压"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/bloodp"
+                    app:layout_constraintStart_toStartOf="@+id/bloodp" />
+
+                <TextView
+                    android:id="@+id/bloodp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#260a50"
+                    android:textSize="21sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.105"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="5dp"
+                    android:text="mmHg"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bloodp"
+                    app:layout_constraintStart_toEndOf="@+id/bloodp"
+                    app:layout_constraintTop_toTopOf="@+id/bloodp" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="6dp"
+                    android:text="暂无血压数据"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/bloodp"
+                    app:layout_constraintTop_toBottomOf="@+id/bloodp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="18dp"
+            app:cardBackgroundColor="#FBFBFB"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_02"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Alcohol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="酒精"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/Alcoholdata"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Alcoholdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="/"
+                    android:textColor="#260a50"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView67"
+                    app:layout_constraintEnd_toStartOf="@+id/textView67"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Alcohol" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="mg/100mL"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toRightOf="@+id/Alcoholdata"
+                    app:layout_constraintTop_toBottomOf="@+id/Alcohol" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="无酒驾行为"
+                    android:textColor="#707070"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Alcoholdata" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="290dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="驾驶前健康监测将有利于预防驾驶事故"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/testbutton"
+            android:layout_width="336dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="72dp"
+            android:backgroundTint="#508bed"
+            android:text="点击拉取最新数据"
+            android:textColor="#ffffff"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/reflash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="未有数据"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/testbutton"
+            app:layout_constraintStart_toStartOf="@+id/testbutton"
+            app:layout_constraintTop_toBottomOf="@+id/testbutton"
+            app:layout_constraintVertical_bias="0.096" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

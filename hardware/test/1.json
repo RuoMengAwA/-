@@ -1,0 +1,698 @@
+{
+  "schema": "https://iotx-tsl.oss-ap-southeast-1.aliyuncs.com/schema.json",
+  "profile": {
+    "version": "1.0",
+    "productKey": "gzxr4QABkPX"
+  },
+  "properties": [
+    {
+      "identifier": "VehInsideTemp",
+      "name": "车内温度",
+      "accessMode": "r",
+      "required": false,
+      "dataType": {
+        "type": "double",
+        "specs": {
+          "min": "-128",
+          "max": "127",
+          "unit": "℃",
+          "step": "1"
+        }
+      }
+    },
+    {
+      "identifier": "Humidity",
+      "name": "车内湿度",
+      "accessMode": "rw",
+      "desc": "湿度",
+      "required": false,
+      "dataType": {
+        "type": "float",
+        "specs": {
+          "min": "0",
+          "max": "100",
+          "unit": "%RH",
+          "unitName": "相对湿度",
+          "step": "0.1"
+        }
+      }
+    },
+    {
+      "identifier": "air_ac",
+      "name": "空气酒精含量",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "double",
+        "specs": {
+          "min": "0",
+          "max": "100",
+          "unit": "mg/L",
+          "unitName": "毫克每升",
+          "step": "0.000001"
+        }
+      }
+    },
+    {
+      "identifier": "blo_ac",
+      "name": "血液酒精浓度",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "double",
+        "specs": {
+          "min": "0",
+          "max": "100",
+          "step": "0.00001"
+        }
+      }
+    },
+    {
+      "identifier": "HeartRate",
+      "name": "心率",
+      "accessMode": "r",
+      "required": false,
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": "1",
+          "max": "1000",
+          "step": "1"
+        }
+      }
+    },
+    {
+      "identifier": "blo",
+      "name": "血氧",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "double",
+        "specs": {
+          "min": "0",
+          "max": "1000",
+          "unit": "%",
+          "unitName": "百分比",
+          "step": "1"
+        }
+      }
+    },
+    {
+      "identifier": "blp",
+      "name": "血压_高",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "double",
+        "specs": {
+          "min": "0",
+          "max": "300",
+          "unit": "mmHg",
+          "unitName": "血压",
+          "step": "0.0001"
+        }
+      }
+    },
+    {
+      "identifier": "blp_l",
+      "name": "血压_低",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "double",
+        "specs": {
+          "min": "0",
+          "max": "300",
+          "unit": "mmHg",
+          "unitName": "血压",
+          "step": "0.0001"
+        }
+      }
+    },
+    {
+      "identifier": "bls",
+      "name": "血糖",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "double",
+        "specs": {
+          "min": "0",
+          "max": "10000",
+          "unit": "mmol/L",
+          "unitName": "血糖",
+          "step": "0.000001"
+        }
+      }
+    },
+    {
+      "identifier": "step",
+      "name": "步伐",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": "0",
+          "max": "10000",
+          "unit": "stepCount",
+          "unitName": "步",
+          "step": "1"
+        }
+      }
+    },
+    {
+      "identifier": "cal",
+      "name": "卡路里",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": "0",
+          "max": "10000",
+          "unit": "cal",
+          "unitName": "卡路里",
+          "step": "1"
+        }
+      }
+    },
+    {
+      "identifier": "dan_bev",
+      "name": "危险行为标志",
+      "accessMode": "rw",
+      "required": false,
+      "dataType": {
+        "type": "bool",
+        "specs": {
+          "0": "无危险行为",
+          "1": "有危险行为"
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "identifier": "post",
+      "name": "post",
+      "type": "info",
+      "required": true,
+      "desc": "属性上报",
+      "method": "thing.event.property.post",
+      "outputData": [
+        {
+          "identifier": "VehInsideTemp",
+          "name": "车内温度",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "-128",
+              "max": "127",
+              "unit": "℃",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "Humidity",
+          "name": "车内湿度",
+          "dataType": {
+            "type": "float",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "%RH",
+              "unitName": "相对湿度",
+              "step": "0.1"
+            }
+          }
+        },
+        {
+          "identifier": "air_ac",
+          "name": "空气酒精含量",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "mg/L",
+              "unitName": "毫克每升",
+              "step": "0.000001"
+            }
+          }
+        },
+        {
+          "identifier": "blo_ac",
+          "name": "血液酒精浓度",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "step": "0.00001"
+            }
+          }
+        },
+        {
+          "identifier": "HeartRate",
+          "name": "心率",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "1",
+              "max": "1000",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "blo",
+          "name": "血氧",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "1000",
+              "unit": "%",
+              "unitName": "百分比",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "blp",
+          "name": "血压_高",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "300",
+              "unit": "mmHg",
+              "unitName": "血压",
+              "step": "0.0001"
+            }
+          }
+        },
+        {
+          "identifier": "blp_l",
+          "name": "血压_低",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "300",
+              "unit": "mmHg",
+              "unitName": "血压",
+              "step": "0.0001"
+            }
+          }
+        },
+        {
+          "identifier": "bls",
+          "name": "血糖",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "mmol/L",
+              "unitName": "血糖",
+              "step": "0.000001"
+            }
+          }
+        },
+        {
+          "identifier": "step",
+          "name": "步伐",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "stepCount",
+              "unitName": "步",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "cal",
+          "name": "卡路里",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "cal",
+              "unitName": "卡路里",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "dan_bev",
+          "name": "危险行为标志",
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": "无危险行为",
+              "1": "有危险行为"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "identifier": "set",
+      "name": "set",
+      "required": true,
+      "callType": "async",
+      "desc": "属性设置",
+      "method": "thing.service.property.set",
+      "inputData": [
+        {
+          "identifier": "Humidity",
+          "name": "车内湿度",
+          "dataType": {
+            "type": "float",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "%RH",
+              "unitName": "相对湿度",
+              "step": "0.1"
+            }
+          }
+        },
+        {
+          "identifier": "air_ac",
+          "name": "空气酒精含量",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "mg/L",
+              "unitName": "毫克每升",
+              "step": "0.000001"
+            }
+          }
+        },
+        {
+          "identifier": "blo_ac",
+          "name": "血液酒精浓度",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "step": "0.00001"
+            }
+          }
+        },
+        {
+          "identifier": "blo",
+          "name": "血氧",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "1000",
+              "unit": "%",
+              "unitName": "百分比",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "blp",
+          "name": "血压_高",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "300",
+              "unit": "mmHg",
+              "unitName": "血压",
+              "step": "0.0001"
+            }
+          }
+        },
+        {
+          "identifier": "blp_l",
+          "name": "血压_低",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "300",
+              "unit": "mmHg",
+              "unitName": "血压",
+              "step": "0.0001"
+            }
+          }
+        },
+        {
+          "identifier": "bls",
+          "name": "血糖",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "mmol/L",
+              "unitName": "血糖",
+              "step": "0.000001"
+            }
+          }
+        },
+        {
+          "identifier": "step",
+          "name": "步伐",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "stepCount",
+              "unitName": "步",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "cal",
+          "name": "卡路里",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "cal",
+              "unitName": "卡路里",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "dan_bev",
+          "name": "危险行为标志",
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": "无危险行为",
+              "1": "有危险行为"
+            }
+          }
+        }
+      ],
+      "outputData": []
+    },
+    {
+      "identifier": "get",
+      "name": "get",
+      "required": true,
+      "callType": "async",
+      "desc": "属性获取",
+      "method": "thing.service.property.get",
+      "inputData": [
+        "VehInsideTemp",
+        "Humidity",
+        "air_ac",
+        "blo_ac",
+        "HeartRate",
+        "blo",
+        "blp",
+        "blp_l",
+        "bls",
+        "step",
+        "cal",
+        "dan_bev"
+      ],
+      "outputData": [
+        {
+          "identifier": "VehInsideTemp",
+          "name": "车内温度",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "-128",
+              "max": "127",
+              "unit": "℃",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "Humidity",
+          "name": "车内湿度",
+          "dataType": {
+            "type": "float",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "%RH",
+              "unitName": "相对湿度",
+              "step": "0.1"
+            }
+          }
+        },
+        {
+          "identifier": "air_ac",
+          "name": "空气酒精含量",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "unit": "mg/L",
+              "unitName": "毫克每升",
+              "step": "0.000001"
+            }
+          }
+        },
+        {
+          "identifier": "blo_ac",
+          "name": "血液酒精浓度",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "100",
+              "step": "0.00001"
+            }
+          }
+        },
+        {
+          "identifier": "HeartRate",
+          "name": "心率",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "1",
+              "max": "1000",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "blo",
+          "name": "血氧",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "1000",
+              "unit": "%",
+              "unitName": "百分比",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "blp",
+          "name": "血压_高",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "300",
+              "unit": "mmHg",
+              "unitName": "血压",
+              "step": "0.0001"
+            }
+          }
+        },
+        {
+          "identifier": "blp_l",
+          "name": "血压_低",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "300",
+              "unit": "mmHg",
+              "unitName": "血压",
+              "step": "0.0001"
+            }
+          }
+        },
+        {
+          "identifier": "bls",
+          "name": "血糖",
+          "dataType": {
+            "type": "double",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "mmol/L",
+              "unitName": "血糖",
+              "step": "0.000001"
+            }
+          }
+        },
+        {
+          "identifier": "step",
+          "name": "步伐",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "stepCount",
+              "unitName": "步",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "cal",
+          "name": "卡路里",
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": "0",
+              "max": "10000",
+              "unit": "cal",
+              "unitName": "卡路里",
+              "step": "1"
+            }
+          }
+        },
+        {
+          "identifier": "dan_bev",
+          "name": "危险行为标志",
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": "无危险行为",
+              "1": "有危险行为"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

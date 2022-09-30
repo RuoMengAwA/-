@@ -1,0 +1,39 @@
+INFO:bleak.backends.winrt.client:Services resolved for BleakClientWinRT (80:EA:CA:03:02:01)
+INFO:__main__:Connected: True
+INFO:__main__:[Service] 00001800-0000-1000-8000-00805f9b34fb (Handle: 1): Generic Access Profile
+INFO:__main__:	[Characteristic] 00002a00-0000-1000-8000-00805f9b34fb (Handle: 2):  (read), Value: b'fk_watch1.1'
+INFO:__main__:	[Characteristic] 00002a01-0000-1000-8000-00805f9b34fb (Handle: 4):  (read), Value: b'\x00\x00'
+INFO:__main__:	[Characteristic] 00002a02-0000-1000-8000-00805f9b34fb (Handle: 6):  (read,write), Value: b'\x00'
+INFO:__main__:	[Characteristic] 00002a04-0000-1000-8000-00805f9b34fb (Handle: 8):  (read), Value: b'\x08\x00\x10\x00\x00\x00d\x00'
+INFO:__main__:[Service] 00001801-0000-1000-8000-00805f9b34fb (Handle: 12): Generic Attribute Profile
+INFO:__main__:	[Characteristic] 00002a05-0000-1000-8000-00805f9b34fb (Handle: 13):  (indicate), Value: None
+INFO:__main__:		[Descriptor] 00002902-0000-1000-8000-00805f9b34fb (Handle: 15): Client Characteristic Configuration) | Value: b'\x02\x00'
+INFO:__main__:[Service] 0000180a-0000-1000-8000-00805f9b34fb (Handle: 16): Device Information
+INFO:__main__:	[Characteristic] 00002a29-0000-1000-8000-00805f9b34fb (Handle: 17):  (read), Value: b'Dialog Semi'
+INFO:__main__:	[Characteristic] 00002a24-0000-1000-8000-00805f9b34fb (Handle: 19):  (read), Value: b'DA1458x'
+INFO:__main__:	[Characteristic] 00002a26-0000-1000-8000-00805f9b34fb (Handle: 21):  (read), Value: b'v_5.0.4'
+INFO:__main__:	[Characteristic] 00002a28-0000-1000-8000-00805f9b34fb (Handle: 23):  (read), Value: b'x.y.z'
+INFO:__main__:	[Characteristic] 00002a23-0000-1000-8000-00805f9b34fb (Handle: 25):  (read), Value: b'\x124V\xff\xfe\x9a\xbc\xde'
+INFO:__main__:	[Characteristic] 00002a50-0000-1000-8000-00805f9b34fb (Handle: 27):  (read), Value: b'\x01\xd2\x00\x80\x05\x00\x01'
+INFO:__main__:[Service] 0000fef5-0000-1000-8000-00805f9b34fb (Handle: 29): Dialog Semiconductor GmbH
+INFO:__main__:	[Characteristic] 8082caa8-41a6-4021-91c6-56f9b954cc34 (Handle: 30):  (read,write), Value: b''
+INFO:__main__:	[Characteristic] 724249f0-5ec3-4b5f-8804-42345af08651 (Handle: 32):  (read,write), Value: b''
+INFO:__main__:	[Characteristic] 6c53db25-47a1-45fe-a022-7c92fb334fd4 (Handle: 34):  (read), Value: b''
+INFO:__main__:	[Characteristic] 9d84b9a3-000c-49d8-9183-855b673fda31 (Handle: 36):  (read,write), Value: b''
+INFO:__main__:	[Characteristic] 457871e8-d516-4ca1-9116-57d0b17b9cb2 (Handle: 38):  (read,write-without-response,write), Value: b''
+INFO:__main__:	[Characteristic] 5f78df94-798c-46f5-990a-b3eb6a065c88 (Handle: 40):  (read,notify), Value: b'\x00'
+INFO:__main__:		[Descriptor] 00002902-0000-1000-8000-00805f9b34fb (Handle: 42): Client Characteristic Configuration) | Value: b'\x00\x00'
+INFO:__main__:[Service] 0000fff0-0000-1000-8000-00805f9b34fb (Handle: 43): Vendor specific
+INFO:__main__:	[Characteristic] 0000fff1-0000-1000-8000-00805f9b34fb (Handle: 44): Indicateable (read,write-without-response,notify), Value: b''
+INFO:__main__:		[Descriptor] 00002902-0000-1000-8000-00805f9b34fb (Handle: 46): Client Characteristic Configuration) | Value: b''
+INFO:__main__:		[Descriptor] 00002901-0000-1000-8000-00805f9b34fb (Handle: 47): Characteristic User Description) | Value: b'Indicateable'
+INFO:__main__:	[Characteristic] 0000fff4-0000-1000-8000-00805f9b34fb (Handle: 48): Lon (read,write-without-response,notify), Value: b''
+INFO:__main__:		[Descriptor] 00002902-0000-1000-8000-00805f9b34fb (Handle: 50): Client Characteristic Configuration) | Value: b''
+INFO:__main__:		[Descriptor] 00002901-0000-1000-8000-00805f9b34fb (Handle: 51): Characteristic User Description) | Value: b'Lon'
+
+ADDRESS = (
+    "80:EA:CA:03:02:01"
+    if platform.system() != "Darwin"
+    else "B9EA5233-37EF-4DD6-87A8-2A875E821C46"
+)
+
